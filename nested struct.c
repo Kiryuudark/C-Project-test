@@ -40,6 +40,20 @@ int main (){
         scanf("%d", &client[i].personal.birth_date);
         printf("Previous diseases: ");
         scanf("%s", &client[i].personal.previous_diseases);
+        printf("Type Street: ");
+        scanf("%s", &client[i].adress.street);
+        printf("Number: ");
+        scanf("%d", &client[i].adress.number);
+        printf("zip code: ");
+        scanf("%d", &client[i].adress.zip_code);
+        printf("Neighborhood: ");
+        scanf("%s", &client[i].adress.neighborhood);
+        printf("Country: ");
+        scanf("%s", &client[i].adress.country);
+        printf("Register type: ");
+        scanf("%s", &client[i].register_type);
+        printf("Neighbor: ");
+        scanf("%s", &client[i].beneficts);
         printf("\n------\n");
     }
 

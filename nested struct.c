@@ -11,7 +11,7 @@ struct m_adress{
 struct m_person_info{
     char name[30];
     int age;
-    char blood_type[2];
+    char blood_type[3];
     char previous_diseases[20];
     int birth_date;
 };
@@ -25,11 +25,11 @@ struct m_register{
 };
 
 int main (){
-    struct m_register client[2];
-    int i;
+    int i, cont=2;
+    struct m_register client[cont];
 
     printf("Welcome!\n");
-    for (i=0;i<1;i++){
+    for (i=0;i<cont;i++){
         printf("Name: ");
         scanf("%s", &client[i].personal.name);
         printf("Age: ");
@@ -61,7 +61,7 @@ int main (){
     printf("\n------\n");
     printf("information stored:\n\n");
 
-    for(i=0;i<1;i++){
+    for(i=0;i<cont;i++){
         printf("Name: %s", client[i].personal.name);
         printf("\nAge: %d", client[i].personal.age);
         printf("\nBlood Type: %s", client[i].personal.blood_type);
@@ -73,7 +73,7 @@ int main (){
         printf("\nNeighborhood: %s", client[i].adress.neighborhood);
         printf("\nCountry: %s", client[i].adress.country);
         printf("\nRegister Type: %s", client[i].register_type);
-        printf("\nBeneficts: %s", client[i].beneficts);
+        printf("\nBeneficts: %s\n\n", client[i].beneficts);
     }
     
 

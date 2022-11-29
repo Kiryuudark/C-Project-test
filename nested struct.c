@@ -11,7 +11,7 @@ struct m_adress{
 struct m_person_info{
     char name[30];
     int age;
-    char blood_type[1];
+    char blood_type[2];
     char previous_diseases[20];
     int birth_date;
 };
@@ -48,6 +48,7 @@ int main (){
         printf("Name: %s", client[i].personal.name);
         printf("\nAge: %d", client[i].personal.age);
         printf("\nBlood Type: %s", client[i].personal.blood_type);
+        printf("\nBirth Date: %d", client[i].personal.birth_date);
         printf("\nPrevious diseases: %s", client[i].personal.previous_diseases);
     }
     

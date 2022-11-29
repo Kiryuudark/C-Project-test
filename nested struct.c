@@ -40,30 +40,40 @@ int main (){
         scanf("%d", &client[i].personal.birth_date);
         printf("Previous diseases: ");
         scanf("%s", &client[i].personal.previous_diseases);
+        system("clear");
         printf("Type Street: ");
         scanf("%s", &client[i].adress.street);
         printf("Number: ");
         scanf("%d", &client[i].adress.number);
-        printf("zip code: ");
+        printf("Zip code: ");
         scanf("%d", &client[i].adress.zip_code);
         printf("Neighborhood: ");
         scanf("%s", &client[i].adress.neighborhood);
         printf("Country: ");
         scanf("%s", &client[i].adress.country);
+        system("clear");
         printf("Register type: ");
         scanf("%s", &client[i].register_type);
-        printf("Neighbor: ");
+        printf("Beneficts: ");
         scanf("%s", &client[i].beneficts);
-        printf("\n------\n");
+        system("clear");
     }
-
+    printf("\n------\n");
     printf("information stored:\n\n");
+
     for(i=0;i<1;i++){
         printf("Name: %s", client[i].personal.name);
         printf("\nAge: %d", client[i].personal.age);
         printf("\nBlood Type: %s", client[i].personal.blood_type);
         printf("\nBirth Date: %d", client[i].personal.birth_date);
         printf("\nPrevious diseases: %s", client[i].personal.previous_diseases);
+        printf("\nStreet: %s", client[i].adress.street);
+        printf("\nNumber: %d", client[i].adress.number);
+        printf("\nZip Code: %d", client[i].adress.zip_code);
+        printf("\nNeighborhood: %s", client[i].adress.neighborhood);
+        printf("\nCountry: %s", client[i].adress.country);
+        printf("\nRegister Type: %s", client[i].register_type);
+        printf("\nBeneficts: %s", client[i].beneficts);
     }
     
 

@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 typedef struct {
-
     int potato;
     int *next;
 } Ptr;
@@ -17,16 +16,21 @@ int main(){
     third->next= fourth;
     fourth->next= NULL;
 
-    first->potato=2;
-    second->potato=4;
-    third->potato=8;
-    fourth->potato=16;
+    int implement=1;
+    while (aux!=NULL) {
+        aux->potato=2*implement;
+        aux = aux->next;
+        implement++;
+    };
 
-
+    aux = first;
     while (aux!=NULL) {
         printf("%d\n", aux->potato);
         aux = aux->next;
     };
+
+    //free (first, second, third, fourth);
+
     return 0;
 
 }

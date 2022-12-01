@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+//this function return a factorial value using recurvisity function.
+
+int factorial (int value);
+
 int main () {
 
     int value;

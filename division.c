@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// this function just do a simple division and show result
+
 int main(){
    float num1, num2;
    printf("Type the first number to divide: ");

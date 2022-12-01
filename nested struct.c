@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+//Nested structs are structs within struct. 
+//This function shows how it works, how to implement and how can be used for.
+
 struct m_adress{
     char street[30];
     int number;

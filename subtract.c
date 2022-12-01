@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+//this function implement a subtract in a function
+
+int subtract();
+
 int main(){
    int result;
    result = subtract();

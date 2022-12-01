@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// functions create a pointer capable of create, read and append content in a text document.
+
 int main (){
 
     FILE *file;

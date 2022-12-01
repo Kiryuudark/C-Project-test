@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// in this function pointer is used to show a value;
+
 int main()
 {
     int *ptr;

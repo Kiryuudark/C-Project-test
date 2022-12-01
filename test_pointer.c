@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// this function sorts random numbers you type. You can change quantity changing i variable.
+
+void order ();
+
 int main()
 {
     int *ptr;
@@ -17,7 +21,7 @@ int main()
             scanf("%d", &test[a]);       
         }
         ptr = &test;
-        sort(ptr, i);
+        order(ptr, i);
         // I made this printf to check if it was possible for the pointer, in a different function, to change the value of a variable that didn't have it, just the address and it works
         for (a=0; i>a; a++){
             printf("%d ", test[a]);
@@ -28,7 +32,7 @@ int main()
     return 0;
 }
 
-sort(int *ptr, int a){
+void order(int *ptr, int a){
     int i, aux, cont=1;
 
    while(cont!=0){

@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+//in this function, typedef simplify the use of "struct Personal" to "Person"
+
 typedef struct Personal {
 
     char name[20];

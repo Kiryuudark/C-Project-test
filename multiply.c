@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+// this function just do a multiply using function
+
+int multiply();
+
 int main(){
    int result;
    result = multiply();

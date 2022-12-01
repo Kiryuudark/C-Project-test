@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+// this function implement a raw struct 
+
 struct Personal {
 
     char name[20];

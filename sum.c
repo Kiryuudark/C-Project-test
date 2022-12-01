@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+//this function shows a sum did using function
+
+int add ();
+
 int main(){
    int result;
    result = add();

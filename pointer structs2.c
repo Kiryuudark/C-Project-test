@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//this function introduces the concept of passing between structs, deletion and inclusion in a shallow way
+
 typedef struct{
     int value;
     int *next;
@@ -23,7 +25,7 @@ int main(){
         printf("%d\n",test->value);
         test = test->next;
     }
-    //what if i want include a new between one and two?
+    //include raw function
     printf("-----\n");
     Ptr *one_half = (Ptr*) malloc(sizeof(Ptr));
     one_half->value=3;
@@ -36,7 +38,7 @@ int main(){
         test = test->next;
     }
 
-    //what if i want exclude some of them?
+    //exclude raw function
      printf("-----\n");
     one->next = two;
     free (one_half);

@@ -1,7 +1,7 @@
-//i created this to implement functions to do what i've done until now
-
 #include <stdio.h>
 #include <stdlib.h>
+
+//this function introduces the concepts of pointers, linked lists, adding and subtracting structs and a shallow menu concept.
 
 typedef struct {
     int value;

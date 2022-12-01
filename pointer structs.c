@@ -1,7 +1,10 @@
 #include <stdio.h>
 
+//in this function is introduced the concept of linked list.
+//first, second, third and fourth are linked lists made with pointers
+
 typedef struct {
-    int potato;
+    int value;
     int *next;
 } Ptr;
 
@@ -18,18 +21,21 @@ int main(){
 
     int implement=1;
     while (aux!=NULL) {
-        aux->potato=2*implement;
+        aux->value=2*implement;
         aux = aux->next;
         implement++;
     };
 
     aux = first;
     while (aux!=NULL) {
-        printf("%d\n", aux->potato);
+        printf("%d\n", aux->value);
         aux = aux->next;
     };
 
-    //free (first, second, third, fourth);
+    free(first);
+    free(second);
+    free(third);
+    free(fourth);
 
     return 0;
 

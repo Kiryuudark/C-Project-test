@@ -53,8 +53,6 @@ Ptr* clear(Ptr *list, int value){
     Ptr *aux = list; 
     Ptr *previous = list;
     
-
-    //previous->next = aux;
     if (list==NULL){
         printf("there's no value in list");
     }
@@ -63,33 +61,32 @@ Ptr* clear(Ptr *list, int value){
             list=list->next;
         }
         else{
-        value--;
-        while(value>0){
             value--;
-            if(aux==NULL){
-                printf("this position doesn't exist\n");
-                value=-1;
-                break;              
+            while(value>0){
+                value--;
+                if(aux==NULL){
+                    printf("this position doesn't exist\n");
+                    value=-1;
+                    break;              
+                }
+                else {
+                    previous=aux;
+                    aux = aux->next;
+                }
             }
-            else {
-                previous=aux;
-                aux = aux->next;
+            if(value==0){
+                if(aux->next == NULL){
+                    previous->next=NULL;
+                    aux = NULL;
+                }
+                else {
+                    previous->next = aux->next;
+                    aux = NULL;
+                }
             }
-        }
-        if(value==0){
-            if(aux->next == NULL){
-                previous->next=NULL;
-                aux = NULL;
-            }
-            else {
-                previous->next = aux->next;
-                aux = NULL;
-            }
-        }
         }
     }
     return list;
-    
 }
 
 int main(){
@@ -111,32 +108,26 @@ int main(){
                 if (option == 1){
                 printf("What value do you want to enter?");
                 scanf("%d", &value);
-
                 one = right_insert(one,value);
             }
             else{
                 if (option == 2){
                     printf("What value do you want to enter?");
                     scanf("%d", &value);
-
                     one = left_insert(one,value);
                 }
                 else{
                     if (option == 3){
-                    printf("What position do you want to erase?");
-                    scanf("%d", &value);
-
-                    one = clear(one,value);
+                        printf("What position do you want to erase?");
+                        scanf("%d", &value);
+                        one = clear(one,value);
                     }
                     else{
                         system("clear");
                         printf("All values insert:\n");
                         s_print(one);
-                        fflush(stdin);
                         scanf("%d",&value);
-                        int c = getchar();
-                    }
-                    
+                    }                    
                 }
             }
         }

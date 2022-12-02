@@ -31,7 +31,7 @@ Essa função apresenta o ceonceito de struct dentro de struct
 ### Pointer matrix.c
 Essa função realiza uma tarefa semelhante à matrix.c, porém com o uso de ponteiros.
 
-### Pointer Structs.c Pointer Structs2.c Pointer Structs3.c
+### Pointer Structs.c / Pointer Structs2.c / Pointer Structs3.c
 Essas funções implementam o conceito de Struturas linkadas, dessa forma é possível avançar entre structs, adicionar valores entre elas, etc. O "pointer Structs3" é a versão final que implementa esse conceito através de funções externas e um menu simples.
 
 ### Pointer.c

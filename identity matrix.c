@@ -28,8 +28,7 @@ int main (){
             }
         }
         printf("\n");
-
-            printf("Identity Matrix of %d: \n", size);
+        printf("Identity Matrix of %d: \n", size);
         for (i=0; i<(size*size); i++){
             printf("%d ", *(pointer));
             pointer++;

@@ -6,23 +6,19 @@
 
 int main( int argc, char ** argv ){
 
-    // Mensagem aparece na tela
     char mesg[]="Digite uma mensagem: ";
     char str[80];
 
-    // para armazenar o número de linhas e o número de colunas da tela
+    // size of window
     int row,col;
-
-    // inicia a ncurses
+    // starts ncurses lib
     initscr();
-
-    // obtém o número de linhas e colunas
+    // get widow size and put it in row and col
     getmaxyx(stdscr,row,col);
-
-    // imprime a mensagem no centro da tela
     mvprintw(row/2,(col-strlen(mesg))/2,"%s",mesg);
     getstr(str);
     attron(A_BOLD);
+    //print mensage
     mvprintw(0, (col-strlen("Você digitou: "))/2, "Você digitou: %s", str);
     getch();
     endwin();
